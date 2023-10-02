@@ -3,6 +3,7 @@ ruby File.read(".ruby-version").strip
 
 gem "bootsnap", require: false
 gem "cssbundling-rails"
+gem "devise", "~> 4.9"
 gem "image_processing", "~> 1.12"
 gem "jsbundling-rails"
 gem "puma", "~> 5.0"
