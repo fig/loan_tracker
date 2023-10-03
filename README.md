@@ -1,24 +1,27 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
+This README documents steps necessary to get the
 application up and running.
 
-Things you may want to cover:
+## System requirements:
 
-* Ruby version
+* Ruby -v 3.2.2
 
-* System dependencies
+* SQlite
 
-* Configuration
+* Node -v 16.x.x
 
-* Database creation
+## Setup
 
-* Database initialization
+Run `bin/setup` to install dependencies and prepare a seeded databse
 
-* How to run the test suite
+## Development
 
-* Services (job queues, cache servers, search engines, etc.)
+Run `bin/dev` to start a development server
 
-* Deployment instructions
+Login credentials:
 
-* ...
+  * email: `admin@example.com`
+  * password: `password`
+
+
