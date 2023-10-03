@@ -7,7 +7,7 @@
       <small>due:</small> <%= time_tag Date.parse(lender.next_due) %>
     </div>
     <div class="col-1">
-      <%= link_to '#' do %>
+      <%= link_to "lenders/#{lender.id}" do %>
         <i class="bi bi-arrow-up-right-square"></i>
       <% end %>
     </div>

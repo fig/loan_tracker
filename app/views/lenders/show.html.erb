@@ -1,0 +1,23 @@
+<div class="card rounded-0">
+  <div>
+  </div>
+  <div class="card-header">
+    <a class="btn btn-outline-secondary float-start position-absolute" href=<%= lenders_path %>>
+      <i class="bi bi-caret-left-fill fs-4 text-black"></i>
+    </a>
+    <h2 class="pt-2 text-center"><%= @lender.name %></h2>
+    </div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">amount</th>
+          <th scope="col">Due Date</th>
+          <th scope="col">Purpose</th>
+          <th scope="col">Edit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <%= render partial: 'loans/loan', collection: @loans, cached: true %>
+      </tbody>
+    </table>
+  </div>

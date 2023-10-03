@@ -1,0 +1,10 @@
+<tr>
+  <td><%= number_to_currency(loan.amount) %></td>
+  <td><%= time_tag(loan.due_date) %></td>
+  <td><%= loan.purpose %></td>
+  <td><%= link_to '#' do %>
+      <i class="bi bi-pencil-square"></i>
+    <% end %>
+  </td>
+
+</tr>

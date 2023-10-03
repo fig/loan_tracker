@@ -12,4 +12,12 @@ class LendersController < ApplicationController
                            )
                            .order(next_due: :asc)
   end
+
+  def show
+    @loans = current_user.loans.where(lender:).order(due_date: :asc)
+  end
+
+  def lender
+    @lender ||= Lender.find(params[:id])
+  end
 end
