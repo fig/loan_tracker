@@ -1,17 +1,11 @@
-<div class="card rounded-0">
-  <div>
-  </div>
-  <div class="card-header">
-    <a class="btn btn-outline-secondary float-start position-absolute" href="#">
-      <i class="bi bi-caret-left-fill fs-4 text-black"></i>
-    </a>
-    <h2 class="pt-2 text-center">Your Debts</h2>
-  </div>
+<% provide :header, "Your Debts"  %>
 
-  <% @lenders.each do |lender| %>
-    <div class="card-body m-2 border border-2 rounded-3 shadow-sm">
-      <%= render 'lender-summary',  lender: lender  %>
-    </div>
-  <% end %>
+<% @lenders.each do |lender| %>
+  <div class="card-body m-2 border border-2 rounded-3 shadow-sm">
+    <%= render 'lender-summary',  lender: lender  %>
+  </div>
+<% end %>
 
+<div class="card-footer">
+  <%= link_to "ADD",new_loan_path, class: "btn btn-primary" %>
 </div>
