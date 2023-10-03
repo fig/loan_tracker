@@ -1,0 +1,15 @@
+<%= tag.div id: "lender_#{lender.id}" do %>
+  <div class="row ">
+    <div class="col-3"><%= number_to_currency(lender.total_amount) %></div>
+    <div class="col">
+      <small>to:</small> <%= lender.name %>
+      <br>
+      <small>due:</small> <%= time_tag Date.parse(lender.next_due) %>
+    </div>
+    <div class="col-1">
+      <%= link_to '#' do %>
+        <i class="bi bi-arrow-up-right-square"></i>
+      <% end %>
+    </div>
+  </div>
+<% end %>
